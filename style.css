@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    background-image: url(/img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(29, 125, 243);
+    min-height: 70px;
+    align-items: center;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: #ffff;
+}
+
+form{
+    width: 450px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffff;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.mensajeError{
+    color: rgb(255, 1, 1);
+    margin-top: 0px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  .mensajeCorrecto {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(0, 48, 6);
+  }
+
+h2{
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom:20px;
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+.check{
+    width: 13px;
+    height: 13px;
+    margin:0;
+    vertical-align: bottom;
+    position: relative;
+    overflow: hidden;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#enviar{
+    background-color: rgb(104, 228, 27);
+    padding: 15px;
+    border-radius: 20px;
+}
+
+#enviar:hover{
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #000;
+    min-height: 70px;
+}
+
+footer p {
+    color: #ffff;
+}
+
+@media (max-width:480px){
+    form{
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+    nav {
+        padding: 10px 0px;
+    }
+    footer{
+        flex-direction: column;
+    }
+}
